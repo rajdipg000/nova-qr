@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova:Genarator</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./source/style.css" />
+    <link rel="stylesheet" href="./source/mecha.css" />
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-border"></div>
+    <!--Nav area-->
+    <nav class="nova">
+      <h1>Nova</h1>
+      <ul>
+        <li><a id="selected" href="#">QR Generator</a></li>
+        <li><a href="reader.html">QR Generator</a></li>
+      </ul>
+    </nav>
+
+    <div class="alignment">
+      <div class="container">
+        <h1>QR-Reader</h1>
+        <div class="section">
+          <marquee>MAX 50 charecters</marquee>
+        </div>
+      </div>
+    </div>
+    <div class="alignment">
+      <form action="">
+        <div class="row">
+          <div class="col-10 form-floating">
+            <textarea
+              name="text"
+              class="form-control box"
+              placeholder="Enter Here"
+              id="floatingTextarea"
+            ></textarea>
+          </div>
+        </div>
+        <br />
+        <div class="col">
+          <button
+            class="btn btn-primary"
+            style="background-color: black; border-color: black"
+            id="render"
+            type="submit"
+          >
+            Render
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="qr-align">
+      <img src="" id="qr" />
+      <a href="" class="btn btn-primary" id="download" download="download.png"
+        >Download</a
+      >
+    </div>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/qrcode-generator/qrcode.js"></script>
+  <script src="./source/mecha.js"></script>
+  <script src="./source/renderer.js"></script>
+</html>

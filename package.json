@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "qrcode-generator": "^1.4.4"
-  }
-}

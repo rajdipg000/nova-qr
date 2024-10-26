@@ -1,0 +1,61 @@
+body{
+  cursor: none;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+.cursor {
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 15px;
+    background-color: rgb(9, 9, 9);
+    border-radius: 100%;
+    border-style: none;
+    transition: 0.09s ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .cursor-border {
+    position: absolute;
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-width: 3px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgb(112, 108, 108);
+    transition: 0.1s ease-in-out;
+    pointer-events: none;
+    z-index: 2;
+  }
+  @media (max-width:600px) {
+    
+    .cursor {
+      display: none;
+      /* position: absolute;
+      aspect-ratio: 1/1;
+      width: 15px;
+      background-color: rgb(9, 9, 9);
+      border-radius: 100%;
+      border-style: none;
+      transition: 0.09s ease-in-out;
+      pointer-events: none;
+      z-index: 1; */
+    }
+    
+    .cursor-border {
+      display: none;
+      /* position: absolute;
+      width: 30px;
+      aspect-ratio: 1/1;
+      border-width: 3px;
+      border-radius: 100%;
+      border-style: solid;
+      border-color: rgb(112, 108, 108);
+      transition: 0.1s ease-in-out;
+      pointer-events: none;
+      z-index: 2; */
+    }
+  }
